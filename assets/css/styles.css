@@ -1,0 +1,178 @@
+/* Wo's Custom Tailoring - Luxury Sartorial Theme */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-gold: #c5a059;
+  --color-gold-light: #dfba73;
+  --color-gold-dark: #997838;
+  --color-obsidian: #0b0c0e;
+  --color-charcoal: #14161a;
+  --color-card: #191b21;
+  --color-border: #282a32;
+  --color-border-gold: rgba(197, 160, 89, 0.3);
+  --color-ivory: #f7f6f2;
+  --color-muted: #9da0a8;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--color-obsidian);
+  color: var(--color-ivory);
+  overflow-x: hidden;
+}
+
+.font-serif-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+}
+
+/* Gold Gradient Accents */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #dfba73 0%, #c5a059 50%, #997838 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #dfba73 0%, #c5a059 100%);
+}
+
+.border-gold-subtle {
+  border-color: var(--color-border-gold);
+}
+
+.border-gold-hover:hover {
+  border-color: var(--color-gold);
+}
+
+/* Button & Interactive styles */
+.btn-gold {
+  background: linear-gradient(135deg, #dfba73 0%, #c5a059 100%);
+  color: #0b0c0e;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #ebd193 0%, #d4af37 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(197, 160, 89, 0.35);
+}
+
+.btn-outline-gold {
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold-light);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(197, 160, 89, 0.12);
+  color: #ffffff;
+  border-color: var(--color-gold-light);
+  transform: translateY(-2px);
+}
+
+/* Luxury Glassmorphism Card */
+.luxury-card {
+  background: rgba(22, 24, 29, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+/* Subtle Hero Grain & Shimmer */
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* Before / After Slider */
+.ba-slider-container {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.ba-slider-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.ba-slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--color-gold);
+  cursor: ew-resize;
+  transform: translateX(-50%);
+  box-shadow: 0 0 12px rgba(197, 160, 89, 0.8);
+}
+
+.ba-slider-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0b0c0e;
+  border: 2px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold-light);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0c0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #282a32;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  transition: opacity 0.3s ease;
+}

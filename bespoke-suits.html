@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke Custom Suits & Shirts | Wo's Custom Tailoring NYC</title>
+  <meta name="description" content="Experience unrivaled bespoke tailoring on the Upper East Side. Custom suits starting from $2,880 and custom dress shirts from $299. Hand-cut and basted in Manhattan.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              300: '#ebd193',
+              400: '#dfba73',
+              500: '#c5a059',
+              600: '#997838',
+            },
+            obsidian: '#0b0c0e',
+            charcoal: '#14161a',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            cinzel: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/home_wo-logo.png">
+</head>
+<body class="bg-obsidian text-stone-100 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-stone-950/90 backdrop-blur-md border-b border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full border border-amber-500/40 bg-stone-900 flex items-center justify-center">
+          <svg class="w-5 h-5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
+        </div>
+        <div>
+          <span class="font-cinzel text-lg font-bold tracking-widest text-stone-100 block leading-none">WO'S</span>
+          <span class="text-[10px] uppercase tracking-[0.25em] text-amber-400 font-medium block mt-1">Custom Tailoring</span>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-stone-300">
+        <a href="index.html" class="hover:text-amber-300">Home</a>
+        <a href="bespoke-suits.html" class="text-amber-400 font-semibold">Custom Suits</a>
+        <a href="#shirts" class="hover:text-amber-300">Custom Shirts</a>
+        <a href="wedding-gowns.html" class="hover:text-amber-300">Bridal Gowns</a>
+        <a href="index.html#calculator" class="hover:text-amber-300">Alterations</a>
+        <a href="index.html#contact" class="hover:text-amber-300">Location</a>
+      </nav>
+      <div>
+        <a href="tel:2129889889" class="px-4 py-2 rounded-full btn-gold text-xs uppercase font-cinzel font-semibold">
+          Call Atelier: 212-988-9889
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative py-20 px-4 sm:px-6 lg:px-8 border-b border-stone-800 overflow-hidden bg-charcoal">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-amber-500/30 bg-stone-900/80">
+          <span class="text-xs uppercase tracking-[0.25em] font-cinzel text-amber-400">Bespoke Savile Row Standard</span>
+        </div>
+        <h1 class="font-serif text-4xl sm:text-6xl font-bold text-stone-100 leading-tight">
+          Handcrafted Bespoke Suits <span class="text-gold-gradient italic">Engineered for Perfection</span>
+        </h1>
+        <p class="text-stone-300 text-base sm:text-lg font-light leading-relaxed">
+          We believe that every man deserves a suit tailored to fit like a glove. Our bespoke process combines traditional hand-stitching with master pattern drafting, sculpted precisely to your posture and silhouette.
+        </p>
+        <div class="pt-4 flex flex-wrap gap-4">
+          <div class="p-4 rounded-xl bg-stone-900 border border-stone-800">
+            <span class="text-xs uppercase text-amber-400 font-cinzel block">Pricing</span>
+            <span class="font-serif text-2xl font-bold text-stone-100">From $2,880</span>
+          </div>
+          <div class="p-4 rounded-xl bg-stone-900 border border-stone-800">
+            <span class="text-xs uppercase text-amber-400 font-cinzel block">Turnaround</span>
+            <span class="font-serif text-2xl font-bold text-stone-100">4 to 8 Weeks</span>
+          </div>
+          <div class="p-4 rounded-xl bg-stone-900 border border-stone-800">
+            <span class="text-xs uppercase text-amber-400 font-cinzel block">Fittings</span>
+            <span class="font-serif text-2xl font-bold text-stone-100">Multiple Basted Stages</span>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-5 relative">
+        <div class="rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl">
+          <img src="assets/images/master_tailor_craft.jpg" alt="Master Tailor Hand Sewing Bespoke Suit Lapel" class="w-full h-auto object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 3-Step Bespoke Process -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-obsidian">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] font-cinzel text-amber-400 font-semibold block mb-2">From Cloth To Masterpiece</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100">
+          The Bespoke Tailoring Journey
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Step 1 -->
+        <div class="p-8 rounded-2xl bg-stone-950 border border-stone-800 relative">
+          <div class="text-amber-400 font-cinzel text-4xl font-bold mb-4">01</div>
+          <h3 class="font-serif text-xl font-bold text-stone-100 mb-3">Measurement &amp; Silhouette</h3>
+          <p class="text-stone-300 text-sm leading-relaxed font-light">
+            Our Master Tailor takes comprehensive anatomical measurements: shoulder slope, back posture, chest drape, and leg break. You select your lapel width, single or double-breasted closure, vents, lining, and custom horn buttons.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-8 rounded-2xl bg-stone-950 border border-amber-500/30 relative">
+          <div class="text-amber-400 font-cinzel text-4xl font-bold mb-4">02</div>
+          <h3 class="font-serif text-xl font-bold text-stone-100 mb-3">Hand &amp; Machine Sewing</h3>
+          <p class="text-stone-300 text-sm leading-relaxed font-light">
+            Each pattern is drawn by hand onto paper, chalked onto luxury wool, and individually cut. Master Wo assembles the full horsehair chest canvas and attaches the floating interlining for structure that conforms to your body with age.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-8 rounded-2xl bg-stone-950 border border-stone-800 relative">
+          <div class="text-amber-400 font-cinzel text-4xl font-bold mb-4">03</div>
+          <h3 class="font-serif text-xl font-bold text-stone-100 mb-3">Basted Fitting &amp; Refinement</h3>
+          <p class="text-stone-300 text-sm leading-relaxed font-light">
+            You try on the unfinished basted garment in our private Manhattan fitting suite. Every seam, buttonhole, and silhouette detail is examined and calibrated before final hand-pressing and handover.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Shirts Section -->
+  <section id="shirts" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal border-t border-stone-800">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-6 relative">
+        <div class="rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl">
+          <img src="assets/images/bespoke_shirts_fabrics.jpg" alt="Custom Made Dress Shirts Fabric Swatches" class="w-full h-auto object-cover">
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-amber-500/30 bg-stone-900">
+          <span class="text-xs uppercase tracking-[0.25em] font-cinzel text-amber-400">Men &amp; Women's Shirting</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100">
+          Custom-Made Dress Shirts
+        </h2>
+        <p class="text-stone-300 text-sm sm:text-base font-light leading-relaxed">
+          "Every man should have a custom dress shirt... or two... or five." Whether attending a black-tie gala, an important board meeting, or looking for everyday sartorial luxury, our custom dress shirts are cut to your exact neck, shoulder, and wrist proportions.
+        </p>
+
+        <div class="space-y-3 pt-2">
+          <div class="flex items-center gap-3 text-sm text-stone-300">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span><strong>Pricing:</strong> Starting from $299 to $399 per shirt (Minimum 2 shirts per order)</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-stone-300">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span><strong>Turnaround:</strong> Handcrafted and ready within 4 weeks</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-stone-300">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span><strong>Fabrics:</strong> Premium Egyptian Giza long-staple cotton, Swiss Alumo, sea-island poplins, and twills</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-stone-300">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span><strong>Details:</strong> Real mother-of-pearl buttons, custom monogramming, split yoke, and removable brass collar stays</span>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <a href="tel:2129889889" class="px-6 py-3.5 btn-gold rounded-full font-cinzel text-xs uppercase tracking-wider font-semibold inline-block">
+            Schedule Shirt Measurements &bull; (212) 988-9889
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 border-t border-stone-800 py-12 px-4 text-center text-xs text-stone-500 font-cinzel">
+    <p>&copy; 2026 Wo's Custom Tailoring. 1018 Lexington Ave 2nd Floor, New York, NY 10021 &bull; 212-988-9889</p>
+  </footer>
+
+</body>
+</html>

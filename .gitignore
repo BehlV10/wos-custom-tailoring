@@ -1,0 +1,4 @@
+.DS_Store
+site_scrape.json
+original_site_text.txt
+*.log
