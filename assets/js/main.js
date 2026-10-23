@@ -315,10 +315,34 @@ function initBookingModal() {
   const closeBtn = document.getElementById('booking-modal-close');
   const form = document.getElementById('booking-form');
   const successState = document.getElementById('booking-success-state');
+  const submitBtn = document.getElementById('booking-submit-btn');
+  const btnText = document.getElementById('booking-btn-text');
+  const spinner = document.getElementById('booking-spinner');
+  const detailsContainer = document.getElementById('booking-confirmation-details');
+  const emailAtelierBtn = document.getElementById('booking-email-atelier-btn');
+  const doneBtn = document.getElementById('booking-done-btn');
+
+  // Set default date to tomorrow if empty
+  const dateInput = document.getElementById('booking-date');
+  if (dateInput && !dateInput.value) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    dateInput.value = tomorrow.toISOString().split('T')[0];
+  }
+
+  function resetModal() {
+    form?.reset();
+    form?.classList.remove('hidden');
+    successState?.classList.add('hidden');
+    if (submitBtn) submitBtn.removeAttribute('disabled');
+    if (btnText) btnText.textContent = 'Confirm Consultation Request';
+    if (spinner) spinner.classList.add('hidden');
+  }
 
   openBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
+      resetModal();
       const service = btn.getAttribute('data-service');
       const serviceSelect = document.getElementById('booking-service');
       if (serviceSelect && service) {
@@ -332,21 +356,70 @@ function initBookingModal() {
   closeBtn?.addEventListener('click', () => {
     modal?.classList.add('hidden');
     document.body.classList.remove('overflow-hidden');
+    resetModal();
+  });
+
+  doneBtn?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+    resetModal();
   });
 
   modal?.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.add('hidden');
       document.body.classList.remove('overflow-hidden');
+      resetModal();
     }
   });
 
   form?.addEventListener('submit', (e) => {
     e.preventDefault();
-    // Simulate booking confirmation
-    if (form && successState) {
-      form.classList.add('hidden');
-      successState.classList.remove('hidden');
+
+    const name = document.getElementById('booking-name')?.value.trim();
+    const phone = document.getElementById('booking-phone')?.value.trim();
+    const service = document.getElementById('booking-service')?.value || 'Bespoke Consultation';
+    const date = document.getElementById('booking-date')?.value || 'Next Available Date';
+    const time = document.getElementById('booking-time')?.value || 'Morning';
+    const notes = document.getElementById('booking-notes')?.value.trim() || 'Standard fitting request';
+
+    if (!name || !phone) {
+      alert('Please provide your name and phone number so Master Wo can confirm your appointment.');
+      return;
     }
+
+    // Show button loading state
+    if (submitBtn) submitBtn.setAttribute('disabled', 'true');
+    if (btnText) btnText.textContent = 'Submitting Request...';
+    if (spinner) spinner.classList.remove('hidden');
+
+    setTimeout(() => {
+      // Populate confirmation summary
+      if (detailsContainer) {
+        detailsContainer.innerHTML = `
+          <div class="border-b border-stone-800 pb-2 mb-2">
+            <span class="text-amber-400 font-cinzel font-bold text-xs uppercase block">${service}</span>
+            <span class="text-stone-200 font-semibold">${name}</span> &bull; <span class="text-stone-400">${phone}</span>
+          </div>
+          <div><span class="text-stone-400">Requested Time:</span> <span class="text-stone-200 font-medium">${date} (${time})</span></div>
+          <div><span class="text-stone-400">Atelier:</span> <span class="text-stone-200">1018 Lexington Ave, 2nd Floor, NYC</span></div>
+          ${notes ? `<div class="mt-1 pt-1 border-t border-stone-800/60 text-stone-400 italic">"${notes}"</div>` : ''}
+        `;
+      }
+
+      // Prepare mailto link
+      if (emailAtelierBtn) {
+        const subject = encodeURIComponent(`Consultation Request: ${service} - ${name}`);
+        const body = encodeURIComponent(
+          `Hello Wo's Custom Tailoring,\n\nI would like to schedule a consultation for:\nService: ${service}\nName: ${name}\nPhone: ${phone}\nPreferred Date: ${date} (${time})\n\nNotes:\n${notes}\n\nPlease confirm my appointment.\nThank you!`
+        );
+        emailAtelierBtn.href = `mailto:wostailoring@gmail.com?subject=${subject}&body=${body}`;
+      }
+
+      if (form && successState) {
+        form.classList.add('hidden');
+        successState.classList.remove('hidden');
+      }
+    }, 450);
   });
 }

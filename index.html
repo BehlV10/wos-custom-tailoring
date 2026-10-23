@@ -46,7 +46,7 @@
 </head>
 <body class="bg-obsidian text-stone-100 antialiased selection:bg-amber-500/30 selection:text-amber-200">
 
-  <!-- Announcement Bar -->
+  <!-- Top Announcement Bar -->
   <div class="bg-gradient-to-r from-stone-950 via-amber-950/40 to-stone-950 border-b border-amber-500/20 py-2.5 px-4 text-center text-xs tracking-wider uppercase font-cinzel text-amber-300/90 flex items-center justify-center gap-3">
     <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
     <span>Upper East Side NYC Atelier • Walk-Ins Welcome for Standard Alterations • <a href="tel:2129889889" class="underline hover:text-white transition-colors">(212) 988-9889</a></span>
@@ -58,7 +58,6 @@
       
       <!-- Brand Logo -->
       <a href="index.html" class="flex items-center gap-3 group">
-        <!-- Luxury Gold Shears Vector Icon -->
         <div class="w-10 h-10 rounded-full border border-amber-500/40 bg-stone-900/80 flex items-center justify-center group-hover:border-amber-400 transition-colors shadow-inner">
           <svg class="w-5 h-5 text-amber-400 transform group-hover:rotate-12 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="6" cy="6" r="3"></circle>
@@ -86,7 +85,7 @@
         <a href="wedding-gowns.html" class="hover:text-amber-300 transition-colors">Bridal Gowns</a>
         <a href="#heritage" class="hover:text-amber-300 transition-colors">Our Heritage</a>
         <a href="#gallery" class="hover:text-amber-300 transition-colors">Gallery</a>
-        <a href="#contact" class="hover:text-amber-300 transition-colors">Location & Hours</a>
+        <a href="#contact" class="hover:text-amber-300 transition-colors">Location &amp; Hours</a>
       </nav>
 
       <!-- Action Buttons -->
@@ -124,7 +123,7 @@
         <a href="wedding-gowns.html" class="hover:text-amber-400 transition-colors">Bridal Gowns</a>
         <a href="#heritage" class="hover:text-amber-400 transition-colors">Our Heritage</a>
         <a href="#gallery" class="hover:text-amber-400 transition-colors">Gallery</a>
-        <a href="#contact" class="hover:text-amber-400 transition-colors">Location & Hours</a>
+        <a href="#contact" class="hover:text-amber-400 transition-colors">Location &amp; Hours</a>
       </nav>
     </div>
     <div class="space-y-4 pt-6 border-t border-stone-800">
@@ -139,19 +138,15 @@
 
   <!-- Hero Section -->
   <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-24 sm:py-32">
-    <!-- Background Image with cinematic dark gradient overlays -->
     <div class="absolute inset-0 z-0">
       <img src="assets/images/hero_bespoke_atelier.jpg" alt="Master Tailoring Atelier Upper East Side Manhattan" class="w-full h-full object-cover object-center filter brightness-[0.45] contrast-105 scale-105 transform animate-fade-in">
       <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-r from-obsidian/80 via-transparent to-obsidian/80"></div>
     </div>
 
-    <!-- Ambient glow -->
     <div class="hero-glow top-1/4 left-1/3"></div>
 
     <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      
-      <!-- Prestige Badge -->
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-stone-900/70 backdrop-blur-md mb-8">
         <span class="w-2 h-2 rounded-full bg-amber-400"></span>
         <span class="text-xs uppercase tracking-[0.25em] font-cinzel text-amber-300">
@@ -159,7 +154,6 @@
         </span>
       </div>
 
-      <!-- Main Headline -->
       <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-stone-100 leading-[1.1] mb-6">
         The Art of Bespoke Tailoring &amp; <span class="text-gold-gradient italic font-normal">Couture Alterations</span>
       </h1>
@@ -168,7 +162,6 @@
         Over five decades of artisanal craftsmanship. From handmade bespoke suits and custom shirts to delicate bridal gown alterations and luxury denim tailoring. Walk-ins welcomed and preferred for all standard alterations.
       </p>
 
-      <!-- Hero Action CTAs -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-16">
         <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-full btn-gold text-sm uppercase tracking-wider font-cinzel font-semibold shadow-lg">
           Alteration Pricing Calculator
@@ -244,8 +237,6 @@
         
         <!-- Calculator Controls & Items (8 Cols) -->
         <div class="lg:col-span-8 bg-stone-950/80 rounded-2xl border border-stone-800 p-6 sm:p-8 shadow-2xl">
-          
-          <!-- Category Tabs -->
           <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 border-b border-stone-800 text-xs font-cinzel tracking-wider uppercase">
             <button class="calc-tab-btn px-4 py-2 rounded-lg bg-amber-400 text-stone-950 font-semibold transition-all shrink-0" data-cat="all">All Services</button>
             <button class="calc-tab-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-300 hover:text-white transition-all shrink-0" data-cat="trousers">Trousers &amp; Pants</button>
@@ -255,16 +246,14 @@
             <button class="calc-tab-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-300 hover:text-white transition-all shrink-0" data-cat="denim">Jeans &amp; Denim</button>
           </div>
 
-          <!-- Items Checkbox List (populated dynamically) -->
           <div id="calc-items-container" class="space-y-3 max-h-[460px] overflow-y-auto pr-2">
-            <!-- Injected by JavaScript -->
+            <!-- Dynamically populated -->
           </div>
 
           <div class="flex items-center justify-between pt-6 mt-6 border-t border-stone-800 text-xs text-stone-400">
             <span>*Actual prices depend on fabric complexity, hand-finishing, and inner linings.</span>
             <button id="calc-reset" class="text-amber-400 hover:text-amber-300 underline font-cinzel uppercase tracking-wider">Clear Selections</button>
           </div>
-
         </div>
 
         <!-- Live Estimate Summary Card (4 Cols) -->
@@ -307,7 +296,6 @@
               Original chainstitch hem preservation for jeans
             </div>
           </div>
-
         </div>
 
       </div>
@@ -453,7 +441,6 @@
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Imagery (5 Cols) -->
         <div class="lg:col-span-5 relative">
           <div class="relative rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl">
             <img src="assets/images/galleryourstore3.png" alt="Wo's Custom Tailoring Atelier Workspace" class="w-full h-[480px] object-cover">
@@ -465,7 +452,6 @@
               <span class="block text-[11px] uppercase tracking-widest font-cinzel text-amber-400 mt-2">— Master Tailor Wo Zhang</span>
             </div>
           </div>
-          <!-- Badge overlay -->
           <div class="absolute -top-5 -left-5 bg-stone-950 border border-amber-500/40 rounded-full w-24 h-24 flex flex-col items-center justify-center text-center shadow-xl">
             <span class="font-cinzel text-xs text-amber-400">EST.</span>
             <span class="font-serif text-xl font-bold text-stone-100">2000</span>
@@ -473,7 +459,6 @@
           </div>
         </div>
 
-        <!-- Narrative (7 Cols) -->
         <div class="lg:col-span-7 space-y-6">
           <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-amber-500/30 bg-stone-900/50">
             <span class="text-xs uppercase tracking-[0.2em] font-cinzel text-amber-300">50+ Years Sartorial Legacy</span>
@@ -516,16 +501,17 @@
     </div>
   </section>
 
-  <!-- Interactive Portfolio & Archive Gallery -->
+  <!-- Complete Archive & Portfolio Gallery -->
   <section id="gallery" class="py-24 px-4 sm:px-6 lg:px-8 bg-obsidian">
     <div class="max-w-7xl mx-auto">
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <div>
-          <span class="text-xs uppercase tracking-[0.25em] font-cinzel text-amber-400 font-semibold block mb-2">Our Craft In Action</span>
+          <span class="text-xs uppercase tracking-[0.25em] font-cinzel text-amber-400 font-semibold block mb-2">Complete Workshop Archive</span>
           <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100">
             The Atelier Portfolio
           </h2>
+          <p class="text-stone-400 text-xs sm:text-sm mt-2">Featuring Master Wo's bespoke creations, bridal gowns, workshop salon, furs, and press.</p>
         </div>
 
         <!-- Filter Buttons -->
@@ -534,74 +520,275 @@
           <button class="gallery-filter-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-400 hover:text-white transition-all shrink-0" data-filter="suits">Custom Suits</button>
           <button class="gallery-filter-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-400 hover:text-white transition-all shrink-0" data-filter="bridal">Bridal Gowns</button>
           <button class="gallery-filter-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-400 hover:text-white transition-all shrink-0" data-filter="atelier">Our Store</button>
-          <button class="gallery-filter-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-400 hover:text-white transition-all shrink-0" data-filter="press">Press &amp; Furs</button>
+          <button class="gallery-filter-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-400 hover:text-white transition-all shrink-0" data-filter="furs">Furs &amp; Outerwear</button>
+          <button class="gallery-filter-btn px-4 py-2 rounded-lg bg-stone-900 text-stone-400 hover:text-white transition-all shrink-0" data-filter="press">Press &amp; Blog</button>
         </div>
       </div>
 
-      <!-- Gallery Grid -->
+      <!-- Complete Gallery Grid (All Authentic Photos) -->
       <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
         
-        <!-- Item 1: Suit 1 -->
+        <!-- SUITS -->
         <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Bespoke Cobalt Wool Blazer &amp; Silk Pocket Square">
           <img src="assets/images/men_suit1.jpg" alt="Bespoke Suit Wool Blazer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">Bespoke Cobalt Suit &bull; Click to View</span>
+            <span class="text-xs text-amber-300 font-cinzel">Bespoke Cobalt Suit</span>
           </div>
         </div>
 
-        <!-- Item 2: Store 1 -->
-        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Upper East Side Atelier Fitting Salon">
-          <img src="assets/images/galleryourstore1.png" alt="Atelier Interior 1018 Lexington Ave" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">UES Atelier Salon &bull; Click to View</span>
-          </div>
-        </div>
-
-        <!-- Item 3: Bridal 1 -->
-        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Hand-Fitting Bridal Silk &amp; Beaded Gown">
-          <img src="assets/images/galleryourstore2.png" alt="Bridal Hand Stitching" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">Hand-Lined Bridal Silk &bull; Click to View</span>
-          </div>
-        </div>
-
-        <!-- Item 4: Suit 2 -->
         <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Tailored Charcoal Pinstripe Suit">
           <img src="assets/images/men_suit2.png" alt="Custom Charcoal Suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">Charcoal Bespoke Suit &bull; Click to View</span>
+            <span class="text-xs text-amber-300 font-cinzel">Charcoal Pinstripe Suit</span>
           </div>
         </div>
 
-        <!-- Item 5: Bridal Dress 1 -->
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Classic Tuxedo Formal Suit">
+          <img src="assets/images/men_suit3.png" alt="Formal Tuxedo Suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Bespoke Evening Tuxedo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Navy Tailored Wool Suit">
+          <img src="assets/images/men_suit4.jpg" alt="Navy Tailored Wool Suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Navy Wool Bespoke Suit</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Tailored Checkered Sportcoat">
+          <img src="assets/images/men_suit5.jpg" alt="Checkered Sportcoat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Custom Checkered Blazer</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Three-Piece Bespoke Grey Suit">
+          <img src="assets/images/men_suit6.png" alt="Three-Piece Grey Suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Three-Piece Bespoke Suit</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Satin Lapel Midnight Dinner Jacket">
+          <img src="assets/images/men_suit7.png" alt="Midnight Dinner Jacket" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Midnight Dinner Jacket</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Modern Tailored Business Suit">
+          <img src="assets/images/men_suit8.jpg" alt="Tailored Business Suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Modern Business Silhouette</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="suits" data-title="Bespoke Shirt Collar &amp; Cuffs">
+          <img src="assets/images/service_custom_shirt.jpg" alt="Custom Shirt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Custom Dress Shirt Fitting</span>
+          </div>
+        </div>
+
+        <!-- BRIDAL -->
         <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Couture Lace Wedding Gown Alteration">
           <img src="assets/images/gallerywedding-dress1.jpg" alt="Wedding Gown Alteration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">Couture Wedding Gown &bull; Click to View</span>
+            <span class="text-xs text-amber-300 font-cinzel">Couture Wedding Gown</span>
           </div>
         </div>
 
-        <!-- Item 6: Store 5 -->
-        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Master Tailor Workstation &amp; Swatches">
-          <img src="assets/images/galleryourstore5.png" alt="Tailor Workstation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">Bespoke Cutting Table &bull; Click to View</span>
-          </div>
-        </div>
-
-        <!-- Item 7: Press Clipping -->
-        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="press" data-title="Press Feature: Master Tailor Wo Zhang in Manhattan">
-          <img src="assets/images/gallerypress1.png" alt="Press Feature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">Press Feature &bull; Click to View</span>
-          </div>
-        </div>
-
-        <!-- Item 8: Bridal Dress 2 -->
         <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Bridal Bustle &amp; Silhouette Tailoring">
           <img src="assets/images/gallerywedding-dress2.jpg" alt="Bridal Bustle Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-            <span class="text-xs text-amber-300 font-cinzel">Bridal Train Bustle &bull; Click to View</span>
+            <span class="text-xs text-amber-300 font-cinzel">Bridal Train Bustle</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Cathedral Lace Train Tailoring">
+          <img src="assets/images/gallerywedding-dress3.jpg" alt="Cathedral Train Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Cathedral Lace Train</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Mermaid Silhouette Bodice Fitting">
+          <img src="assets/images/gallerywedding-dress4.jpg" alt="Mermaid Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Mermaid Bodice Fitting</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Sweetheart Neckline Modification">
+          <img src="assets/images/gallerywedding-dress5.jpg" alt="Sweetheart Neckline Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Sweetheart Neckline Alteration</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Vintage Beaded Gown Restoration">
+          <img src="assets/images/gallerywedding-dress6.jpg" alt="Vintage Beaded Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Vintage Gown Restoration</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Classic A-Line Silk Wedding Gown">
+          <img src="assets/images/gallerywedding-dress7.jpg" alt="A-Line Silk Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">A-Line Silk Gown</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Sleeveless Lace Bridal Gown">
+          <img src="assets/images/gallerywedding-dress8.jpg" alt="Sleeveless Lace Gown" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Sleeveless Lace Gown</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Bridal Fitting in Dressing Suite">
+          <img src="assets/images/our_service-wedding1.jpg" alt="Bridal Dressing Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Private Bridal Suite Fitting</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="bridal" data-title="Bridesmaid Dress Hem &amp; Waist Contouring">
+          <img src="assets/images/our_service-wedding2.jpg" alt="Bridesmaid Dress" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Bridesmaid Gown Tailoring</span>
+          </div>
+        </div>
+
+        <!-- ATELIER STORE -->
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Upper East Side Atelier Salon &amp; Chandelier">
+          <img src="assets/images/galleryourstore1.png" alt="Atelier Interior 1018 Lexington Ave" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">UES Fitting Salon</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Hand-Stitching Silk Linings in Atelier">
+          <img src="assets/images/galleryourstore2.png" alt="Bridal Hand Stitching" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Hand-Lining Silks</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Master Tailor Sewing &amp; Cutting Benches">
+          <img src="assets/images/galleryourstore3.png" alt="Tailor Workstation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Sewing &amp; Cutting Benches</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Atelier Racks &amp; Completed Client Garments">
+          <img src="assets/images/galleryourstore4.png" alt="Completed Garment Racks" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Atelier Garment Racks</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Fabric Rolls &amp; Swatches Station">
+          <img src="assets/images/galleryourstore5.png" alt="Fabric Station" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Fabric Rolls &amp; Swatches</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="atelier" data-title="Lexington Ave 2nd Floor Atelier Entrance">
+          <img src="assets/images/galleryourstore6.jpg" alt="Storefront Entrance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">1018 Lexington Ave Entrance</span>
+          </div>
+        </div>
+
+        <!-- FURS & OUTERWEAR -->
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="furs" data-title="Luxury Mink Fur Relining &amp; Restoration">
+          <img src="assets/images/galleryfurs1.jpg" alt="Fur Coat Relining" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Mink Fur Restoration</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="furs" data-title="Full-Length Fur Coat Restructuring">
+          <img src="assets/images/galleryfurs2.jpg" alt="Fur Coat Tailoring" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Full-Length Fur Coat</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="furs" data-title="Shearling Jacket Sleeve &amp; Collar Alterations">
+          <img src="assets/images/galleryfurs3.jpg" alt="Shearling Jacket" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Shearling Jacket Alteration</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="furs" data-title="Luxury Trench Coat Shoulder &amp; Waist Tailoring">
+          <img src="assets/images/galleryfurs4.jpg" alt="Trench Coat Tailoring" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Luxury Trench Coat Tailoring</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="furs" data-title="Cashmere Overcoat Collar &amp; Hemming">
+          <img src="assets/images/galleryfurs5.jpg" alt="Cashmere Overcoat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Cashmere Overcoat Alteration</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="furs" data-title="Precision Selvedge Denim &amp; Pants Hemming">
+          <img src="assets/images/service_alteration1.jpg" alt="Trousers Alteration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Original Hem Denim &amp; Pants</span>
+          </div>
+        </div>
+
+        <!-- PRESS & BLOG -->
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="press" data-title="Press Feature: Master Tailor Wo Zhang in Manhattan">
+          <img src="assets/images/gallerypress1.png" alt="Press Feature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Press Feature Profile</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="press" data-title="Editorial Profile: Wo's Custom Tailoring Atelier">
+          <img src="assets/images/gallerypress2.jpg" alt="Editorial Profile" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Editorial Profile</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="press" data-title="Style Guide: Choosing Custom Suit Linings">
+          <img src="assets/images/ourblog.jpg" alt="Suit Linings Guide" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Custom Suit Linings Guide</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="press" data-title="Bridal Guide: 5 Necklines for Wedding Dress Alterations">
+          <img src="assets/images/ourblog1.jpg" alt="Neckline Guide" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Bridal Neckline Guide</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="press" data-title="Wedding Day Fitting: 3 Most Common Dress Alterations">
+          <img src="assets/images/ourblog2.jpg" alt="Dress Alterations Guide" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Bridal Alteration Guide</span>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-xl overflow-hidden cursor-pointer h-72 border border-stone-800 bg-stone-900" data-category="press" data-title="Sartorial Guide: Finding a Suit That Flattrs Your Height">
+          <img src="assets/images/ourblog4.jpg" alt="Suit Silhouette Guide" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs text-amber-300 font-cinzel">Suit Silhouette Guide</span>
           </div>
         </div>
 
@@ -834,26 +1021,11 @@
     </div>
   </section>
 
-  <!-- Pitch Banner to Client -->
-  <section class="py-8 bg-amber-950/20 border-t border-amber-500/20 px-4 text-center">
-    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="text-left">
-        <span class="text-[10px] uppercase tracking-widest font-cinzel text-amber-400 block">Proposed Modern Experience</span>
-        <h4 class="font-serif text-lg font-bold text-stone-100">Designed For Wo's Custom Tailoring Atelier</h4>
-      </div>
-      <div class="flex items-center gap-3">
-        <a href="#services" class="px-5 py-2 rounded-full btn-gold text-xs font-cinzel uppercase tracking-wider">
-          Experience Live Site
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Luxury Footer -->
   <footer class="bg-stone-950 border-t border-stone-900 py-16 px-4 sm:px-6 lg:px-8 text-stone-400">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
       
-      <!-- Brand & Mission -->
+      <!-- Brand & Mission (Address appears ONCE clearly here) -->
       <div class="space-y-4 md:col-span-2">
         <div class="flex items-center gap-3">
           <div class="w-8 h-8 rounded-full border border-amber-500/40 bg-stone-900 flex items-center justify-center">
@@ -864,8 +1036,8 @@
         <p class="text-xs text-stone-400 max-w-md leading-relaxed font-light">
           At Wo's Custom Tailoring, our motto is: in anything we do, we do it well, and we do it with love. Serving New York City with bespoke suits, handcrafted shirts, wedding gown artistry, and couture alterations since 2000.
         </p>
-        <div class="text-xs text-amber-400/90 font-cinzel">
-          1018 Lexington Ave, 2nd Floor &bull; New York, NY 10021 &bull; 212-988-9889
+        <div class="text-xs text-amber-400/90 font-cinzel font-medium">
+          1018 Lexington Ave, 2nd Floor &bull; New York, NY 10021 &bull; (212) 988-9889
         </div>
       </div>
 
@@ -894,10 +1066,11 @@
 
     </div>
 
+    <!-- Bottom Copyright Bar (No duplicate address!) -->
     <div class="max-w-7xl mx-auto pt-8 border-t border-stone-900 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
       <div>&copy; 2026 Wo's Custom Tailoring. All rights reserved.</div>
       <div class="font-cinzel text-[11px] text-stone-400">
-        1018 Lexington Ave, 2nd Fl, New York, NY 10021 &bull; (212) 988-9889
+        Bespoke Craftsmanship &amp; Couture Alterations Since 2000
       </div>
     </div>
   </footer>
@@ -914,8 +1087,8 @@
   </div>
 
   <!-- Booking & Consultation Modal -->
-  <div id="booking-modal" class="fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-md hidden flex items-center justify-center p-4">
-    <div class="bg-stone-900 border border-amber-500/30 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+  <div id="booking-modal" class="fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-md hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-stone-900 border border-amber-500/30 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl my-8">
       <button id="booking-modal-close" class="absolute top-5 right-5 text-stone-400 hover:text-white" aria-label="Close Booking Modal">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
       </button>
@@ -940,26 +1113,26 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-xs uppercase tracking-wider font-cinzel text-stone-300 mb-1">Your Full Name</label>
-            <input type="text" required placeholder="e.g. Alexandra Vance" class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
+            <label class="block text-xs uppercase tracking-wider font-cinzel text-stone-300 mb-1">Your Full Name *</label>
+            <input type="text" id="booking-name" required placeholder="e.g. Alexandra Vance" class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
           </div>
           <div>
-            <label class="block text-xs uppercase tracking-wider font-cinzel text-stone-300 mb-1">Phone Number</label>
-            <input type="tel" required placeholder="(212) 555-0199" class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
+            <label class="block text-xs uppercase tracking-wider font-cinzel text-stone-300 mb-1">Phone Number *</label>
+            <input type="tel" id="booking-phone" required placeholder="(212) 555-0199" class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
           </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-xs uppercase tracking-wider font-cinzel text-stone-300 mb-1">Preferred Date</label>
-            <input type="date" required class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
+            <input type="date" id="booking-date" class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
           </div>
           <div>
             <label class="block text-xs uppercase tracking-wider font-cinzel text-stone-300 mb-1">Preferred Time</label>
-            <select class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
-              <option>Morning (10:00 AM – 12:00 PM)</option>
-              <option>Early Afternoon (12:00 PM – 3:00 PM)</option>
-              <option>Late Afternoon (3:00 PM – 5:30 PM)</option>
+            <select id="booking-time" class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400">
+              <option value="Morning (10:00 AM – 12:00 PM)">Morning (10:00 AM – 12:00 PM)</option>
+              <option value="Early Afternoon (12:00 PM – 3:00 PM)">Early Afternoon (12:00 PM – 3:00 PM)</option>
+              <option value="Late Afternoon (3:00 PM – 5:30 PM)">Late Afternoon (3:00 PM – 5:30 PM)</option>
             </select>
           </div>
         </div>
@@ -969,22 +1142,36 @@
           <textarea id="booking-notes" rows="3" placeholder="Describe the garments (e.g. wedding gown train bustle, jacket sleeves shortening, event deadline)..." class="w-full bg-stone-950 border border-stone-700 rounded-xl px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-amber-400"></textarea>
         </div>
 
-        <button type="submit" class="w-full py-3.5 btn-gold rounded-xl font-cinzel text-xs uppercase tracking-wider font-bold">
-          Confirm Consultation Request
+        <button type="submit" id="booking-submit-btn" class="w-full py-3.5 btn-gold rounded-xl font-cinzel text-xs uppercase tracking-wider font-bold flex items-center justify-center gap-2 cursor-pointer transition-all">
+          <span id="booking-btn-text">Confirm Consultation Request</span>
+          <svg id="booking-spinner" class="hidden w-4 h-4 text-stone-950 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
         </button>
       </form>
 
-      <!-- Booking Success State (hidden by default) -->
-      <div id="booking-success-state" class="hidden text-center py-8 space-y-4">
+      <!-- Booking Success State -->
+      <div id="booking-success-state" class="hidden text-center py-6 space-y-4">
         <div class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
         </div>
-        <h4 class="font-serif text-2xl font-bold text-stone-100">Consultation Requested</h4>
-        <p class="text-sm text-stone-300 max-w-sm mx-auto leading-relaxed">
-          Thank you! We have received your fitting request. Master Wo's atelier will confirm your appointment via phone or text shortly.
+        <h4 class="font-serif text-2xl font-bold text-stone-100">Consultation Request Confirmed</h4>
+        <div id="booking-confirmation-details" class="p-4 rounded-xl bg-stone-950/80 border border-stone-800 text-left text-xs text-stone-300 space-y-1.5 max-w-sm mx-auto">
+          <!-- Dynamically populated -->
+        </div>
+        <p class="text-xs text-stone-400 max-w-sm mx-auto leading-relaxed">
+          Thank you! Master Wo's atelier has received your fitting request and will contact you shortly to confirm your fitting time.
         </p>
-        <div class="pt-4">
-          <p class="text-xs text-amber-400 font-cinzel">Location: 1018 Lexington Ave, 2nd Fl (212-988-9889)</p>
+        <div class="pt-2 flex flex-col sm:flex-row gap-3 max-w-sm mx-auto">
+          <a id="booking-email-atelier-btn" href="mailto:wostailoring@gmail.com" class="flex-1 py-2.5 text-center btn-outline-gold rounded-xl font-cinzel text-xs uppercase tracking-wider font-semibold">
+            Email Atelier
+          </a>
+          <a href="tel:2129889889" class="flex-1 py-2.5 text-center btn-gold rounded-xl font-cinzel text-xs uppercase tracking-wider font-semibold">
+            Call Atelier Now
+          </a>
+        </div>
+        <div class="pt-2">
+          <button id="booking-done-btn" class="text-xs text-stone-400 hover:text-white underline font-cinzel uppercase tracking-wider cursor-pointer">
+            Close &amp; Return To Site
+          </button>
         </div>
       </div>
 
