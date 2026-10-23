@@ -35,14 +35,14 @@
 </head>
 <body class="bg-obsidian text-stone-100 antialiased selection:bg-amber-500/30 selection:text-amber-200">
 
-    <!-- Top Announcement Bar -->
-  <div class="bg-gradient-to-r from-stone-950 via-amber-950/40 to-stone-950 border-b border-amber-500/20 py-2.5 px-4 text-center text-xs tracking-wider uppercase font-cinzel text-amber-300/90 flex items-center justify-center gap-3">
+      <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-stone-950 via-amber-950/40 to-stone-950 border-b border-amber-500/20 py-2 px-4 text-center text-xs tracking-wider uppercase font-cinzel text-amber-300/90 flex items-center justify-center gap-3">
     <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-    <span>Upper East Side NYC Atelier • Walk-Ins Welcome for Standard Alterations • <a href="tel:2129889889" class="underline hover:text-white transition-colors">(212) 988-9889</a></span>
+    <span>Upper East Side NYC Atelier • Walk-Ins Welcome • <a href="tel:2129889889" class="underline hover:text-white transition-colors">(212) 988-9889</a></span>
   </div>
 
-  <!-- Header / Navigation -->
-  <header id="main-header" class="sticky top-0 z-40 w-full transition-all duration-300 bg-stone-950/80 backdrop-blur-md border-b border-stone-800/60">
+  <!-- Header / Navigation (Clean, spacious, zero conflict) -->
+  <header id="main-header" class="sticky top-0 z-40 w-full transition-all duration-300 bg-stone-950/90 backdrop-blur-md border-b border-stone-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Brand Logo -->
@@ -66,22 +66,20 @@
         </div>
       </a>
 
-      <!-- Desktop Nav (Balanced and equally spaced) -->
-      <nav class="hidden xl:flex items-center gap-7 text-xs font-cinzel uppercase tracking-wider font-medium text-stone-300">
-        <a href="index.html" class="hover:text-amber-400 transition-colors py-1 ">Home</a>
-        <a href="index.html#services" class="hover:text-amber-400 transition-colors py-1">Services</a>
+      <!-- Streamlined Desktop Navigation (Spacious, balanced) -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-cinzel uppercase tracking-wider font-medium text-stone-300">
+        <a href="index.html#services" class="hover:text-amber-400 transition-colors py-1">Services &amp; Pricing</a>
         <a href="bespoke-suits.html" class="hover:text-amber-400 transition-colors py-1 ">Custom Suits</a>
         <a href="wedding-gowns.html" class="hover:text-amber-400 transition-colors py-1 text-amber-400 font-semibold border-b border-amber-400">Bridal Gowns</a>
-        <a href="index.html#calculator" class="hover:text-amber-400 transition-colors py-1">Alteration Pricing</a>
         <a href="index.html#heritage" class="hover:text-amber-400 transition-colors py-1">Our Heritage</a>
-        <a href="index.html#gallery" class="hover:text-amber-400 transition-colors py-1">Gallery</a>
-        <a href="index.html#contact" class="hover:text-amber-400 transition-colors py-1">Location &amp; Hours</a>
+        <a href="index.html#gallery" class="hover:text-amber-400 transition-colors py-1">Portfolio</a>
+        <a href="index.html#contact" class="hover:text-amber-400 transition-colors py-1">Location</a>
       </nav>
 
-      <!-- Action Buttons -->
-      <div class="hidden sm:flex items-center gap-4 shrink-0">
-        <a href="tel:2129889889" class="text-xs uppercase tracking-wider font-cinzel text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition-colors">
-          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <!-- Single Right Action -->
+      <div class="hidden sm:flex items-center gap-3 shrink-0">
+        <a href="tel:2129889889" class="px-4 py-2 rounded-full border border-stone-700 hover:border-amber-400 text-stone-300 hover:text-white text-xs font-cinzel uppercase tracking-wider transition-colors flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           (212) 988-9889
         </a>
         <button class="open-booking-modal px-4 py-2 rounded-full btn-gold text-xs uppercase tracking-wider font-cinzel font-semibold cursor-pointer" data-service="Bespoke Consultation">
@@ -90,7 +88,7 @@
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-toggle" class="xl:hidden p-2 text-stone-300 hover:text-white" aria-label="Toggle Navigation Menu">
+      <button id="mobile-menu-toggle" class="lg:hidden p-2 text-stone-300 hover:text-white" aria-label="Toggle Navigation Menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
 
@@ -107,13 +105,11 @@
         </button>
       </div>
       <nav class="flex flex-col space-y-5 mt-8 font-cinzel text-base tracking-wider">
-        <a href="index.html" class="hover:text-amber-400 transition-colors">Home</a>
-        <a href="index.html#services" class="hover:text-amber-400 transition-colors">Services</a>
+        <a href="index.html#services" class="hover:text-amber-400 transition-colors">Services &amp; Pricing</a>
         <a href="bespoke-suits.html" class="hover:text-amber-400 transition-colors">Custom Suits</a>
         <a href="wedding-gowns.html" class="hover:text-amber-400 transition-colors">Bridal Gowns</a>
-        <a href="index.html#calculator" class="hover:text-amber-400 transition-colors">Alteration Pricing</a>
         <a href="index.html#heritage" class="hover:text-amber-400 transition-colors">Our Heritage</a>
-        <a href="index.html#gallery" class="hover:text-amber-400 transition-colors">Gallery</a>
+        <a href="index.html#gallery" class="hover:text-amber-400 transition-colors">Portfolio</a>
         <a href="index.html#contact" class="hover:text-amber-400 transition-colors">Location &amp; Hours</a>
       </nav>
     </div>
